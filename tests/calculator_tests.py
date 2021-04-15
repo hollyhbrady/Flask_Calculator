@@ -1,16 +1,20 @@
 import unittest
-from modules import calculator
+from modules.calculator import *
 
 class TestCalculator(unittest.TestCase):
 
     def test_add(self):
-        self.assertEqual(5, add(2, 3))
+        result = add(2, 3)
+        self.assertEqual(5, result)
 
     def test_subtract(self):
-        self.assertEqual(4, subtract(6, 2)) 
+        result = subtract(6, 2)
+        self.assertEqual(4, result) 
 
     def test_divide(self):
-        self.assertEqual(2, divide(10, 5))
+        result = divide(10, 5)
+        self.assertEqual(2, result)
 
     def test_multiply(self):
-        self.assertEqual(6, multiply(4, 3))
+        result = multiply(4, 3)
+        self.assertEqual(12, result)
